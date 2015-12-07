@@ -594,3 +594,17 @@ a.skip {
 	position: absolute;
 	left: -9999px;
 }
+
+body {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+#grailsLogo {
+	//background: #0e3c56;
+	//padding: 5px;
+}
+
+body#page-activite {
+
+}
