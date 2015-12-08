@@ -6,11 +6,13 @@ class Activite {
 
 	String description
 
-	static belongsTo = [moniteur : Moniteur]
-
 	Integer nbParticipantsMax 
 
+	static belongsTo = [moniteur : Moniteur]
+
+	
+
     static constraints = {
-    	nbParticipantsMax blank : true, nullable: true, min: 1, max: 8
+    	nbParticipantsMax nullable: true, min: 1, max: 8
     }
 }
