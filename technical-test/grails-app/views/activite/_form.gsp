@@ -27,10 +27,10 @@
 </div>
 
 <div class="fieldcontain ${hasErrors(bean: activiteInstance, field: 'nbParticipantsMax', 'error')} ">
-	<label for="participant">
+	<label for="nbParticipantsMax">
 		<g:message code="activite.nbParticipantsMax.label" default="Nombre max de participants" />
 		
 	</label>
-	<g:textField name="participant" value="${activiteInstance?.nbParticipantsMax}"/>
+	<g:textField name="nbParticipantsMax" value="${activiteInstance?.nbParticipantsMax}"/>
 </div>
 
