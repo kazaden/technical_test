@@ -11,6 +11,6 @@ class Activite {
 	static belongsTo = [moniteur : Moniteur]
 
     static constraints = {
-
+    	nbParticipantsMax nullable: true, min: 1, max: 8
     }
 }
