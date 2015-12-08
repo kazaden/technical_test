@@ -23,28 +23,12 @@
 			</g:if>
 			<ol class="property-list activite">
 			
-				<div class="">
+			<div class="container">
 
-					<div class="">
+				<div class="row">
 
-						<g:if test="${activiteInstance?.description}">
-						<li class="fieldcontain">
-							<span id="description-label" class="property-label"><g:message code="activite.description.label" default="Description" /></span>
-							
-								<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${activiteInstance}" field="description"/></span>
-							
-						</li>
-						</g:if>
-					
-						<g:if test="${activiteInstance?.moniteur}">
-						<li class="fieldcontain">
-							<span id="moniteur-label" class="property-label"><g:message code="activite.moniteur.label" default="Moniteur" /></span>
-							
-								<span class="property-value" aria-labelledby="moniteur-label"><g:link controller="moniteur" action="show" id="${activiteInstance?.moniteur?.id}">${activiteInstance?.moniteur?.encodeAsHTML()}</g:link></span>
-							
-						</li>
-						</g:if>
-					
+					<div class="col-sm-6">
+
 						<g:if test="${activiteInstance?.nomActivite}">
 						<li class="fieldcontain">
 							<span id="nomActivite-label" class="property-label"><g:message code="activite.nomActivite.label" default="Nom Activite" /></span>
@@ -54,12 +38,41 @@
 						</li>
 						</g:if>
 
+						<g:if test="${activiteInstance?.description}">
+						<li class="fieldcontain">
+							<span id="description-label" class="property-label"><g:message code="activite.description.label" default="Description" /></span>
+							
+								<span class="property-value" aria-labelledby="description-label"><g:fieldValue bean="${activiteInstance}" field="description"/></span>
+							
+						</li>
+						</g:if>
 					</div>
-					<div class="">
-						
+
+					<div class="col-sm-6">
+
+						<g:if test="${activiteInstance?.moniteur}">
+						<li class="fieldcontain">
+							<span id="moniteur-label" class="property-label"><g:message code="activite.moniteur.label" default="Moniteur" /></span>
+							
+								<span class="property-value" aria-labelledby="moniteur-label"><g:link controller="moniteur" action="show" id="${activiteInstance?.moniteur?.id}">${activiteInstance?.moniteur?.encodeAsHTML()}</g:link></span>
+							
+						</li>
+						</g:if>
+					
+						<g:if test="${activiteInstance?.nbParticipantsMax}">
+							<li class="fieldcontain">
+								<span id="participants-label" class="property-label"><g:message code="activite.participants.label" default="Participants Max" /></span>
+
+								<span class="property-value" aria-labelledby="participants-label"><g:fieldValue bean="${activiteInstance}" field="nbParticipantsMax"/></span>
+							
+								
+							</li>
+						</g:if>
+					
 					</div>
 
 				</div>
+			</div>
 			
 			</ol>
 			<g:form>

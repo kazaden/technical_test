@@ -20,8 +20,8 @@
 	</head>
 	<body>
 		<div id="grailsLogo" role="banner">
-		<a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a>
-		<!--<img src="http://shop.kazaden.com/wp-content/uploads/2015/11/Logo_titre_baseline_orange_blanc_300.png" alt="Grails"/>-->
+		<!--<a href="http://grails.org"><img src="${resource(dir: 'images', file: 'grails_logo.png')}" alt="Grails"/></a>-->
+		<img src="http://shop.kazaden.com/wp-content/uploads/2015/11/Logo_titre_baseline_orange_blanc_300.png" alt="Grails"/>
 		</div>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
