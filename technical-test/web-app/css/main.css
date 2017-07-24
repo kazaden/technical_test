@@ -605,3 +605,6 @@ body {
 	//padding: 5px;
 }
 
+#edit-moniteur #nom {
+	//display: none;
+}

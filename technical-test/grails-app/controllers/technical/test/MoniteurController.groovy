@@ -72,10 +72,7 @@ class MoniteurController {
 
         moniteurInstance.properties = params
 
-        if (!moniteurInstance.save(flush: true)) {
-            render(view: "edit", model: [moniteurInstance: moniteurInstance])
-            return
-        }
+
 
         flash.message = message(code: 'default.updated.message', args: [message(code: 'moniteur.label', default: 'Moniteur'), moniteurInstance.id])
         redirect(action: "show", id: moniteurInstance.id)
