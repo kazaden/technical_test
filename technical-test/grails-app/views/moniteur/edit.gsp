@@ -27,7 +27,7 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form method="post" id="moniteur-edit-form">
+			<g:form method="post">
 				<g:hiddenField name="ids" value="${moniteurInstance?.id}" />
 				<g:hiddenField name="version" value="${moniteurInstance?.version}" />
 				<fieldset class="form">
